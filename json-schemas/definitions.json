@@ -1,0 +1,101 @@
+{
+	"definitions": {
+		"software": {
+			"description": "Declares properties shared by all kinds of software",
+			"type": "object",
+			"properties": {
+				"id": {
+					"description": "The unique identifier for a software",
+					"type": "string"
+				},
+				"generalInfo": {
+					"description": "",
+					"type": "string"
+				},
+				"dataInputFormats": {
+					"description": "",
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"minItems": 0,
+					"uniqueItems": true
+				},
+				"dataOutputFormats": {
+					"description": "",
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"minItems": 0,
+					"uniqueItems": true
+				},
+				"doi": {
+					"description": "",
+					"type": "string"
+				},
+				"source": {
+					"description": "",
+					"type": "string"
+				},
+				"sourceCodeRelease": {
+					"description": "",
+					"type": "string"
+				},
+				"webApplication": {
+					"description": "",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"executables": {
+					"description": "",
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"minItems": 0,
+					"uniqueItems": true
+				},
+				"developer": {
+					"description": "",
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"minItems": 0,
+					"uniqueItems": true
+				},
+				"publicationsThatUsedRelease": {
+					"description": "",
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"minItems": 0,
+					"uniqueItems": true
+				},
+				"documentation": {
+					"description": "",
+					"type": "string"
+				},
+				"license": {
+					"description": "",
+					"type": "string"
+				},
+				"availableOnOlympus": {
+					"description": "",
+					"type": "boolean"
+				},
+				"grants": {
+					"description": "",
+					"type": "string"
+				}
+			},
+			"required": [
+				"generalInfo"
+			]
+		}
+	}
+}

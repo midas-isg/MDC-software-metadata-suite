@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"description": "Disease transmission model software",
+	"allOf": [{
+			"$ref": "definitions.json#/definitions/software"
+		},
+		{
+			"properties": {
+				"pathogenCoverage": {
+					"description": "A list of pathogen NCBI taxa ids",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"locationCoverage": {
+					"description": "A list of Apollo Location Codes",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"hostSpeciesIncluded": {
+					"description": "A list of host species NCBI taxa ids",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"controlMeasures": {
+					"description": "A list of Apollo-SV labels for control measures",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			}
+		}
+	]
+}
