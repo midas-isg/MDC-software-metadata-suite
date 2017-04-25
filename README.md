@@ -1,6 +1,8 @@
 # MIDAS Digital Commons Metadata Suite
 This repository contains the MIDAS Digital Commons JSON schemas (written using JSON schema draft 4) to validate JSON software instances.
 
+The material in this repository is distributed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) license.
+
 ## Instructions to run suite
 1) Navigate to project root directory
 2) Install requirements: `pip install -r requirements.txt`
